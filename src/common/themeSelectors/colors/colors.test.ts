@@ -56,6 +56,18 @@ const scenarios = [
     selector: selectors.getColorHighEmphasis,
     title: 'high emphasis',
   },
+  {
+    expectedResult: theme.colorTokens.colorSurface,
+    name: 'getColorSurface',
+    selector: selectors.getColorSurface,
+    title: 'surface',
+  },
+  {
+    expectedResult: theme.colorTokens.colorHighlight,
+    name: 'getColorHighlight',
+    selector: selectors.getColorHighlight,
+    title: 'highlight',
+  },
 ];
 
 describe('Color selectors', () => {

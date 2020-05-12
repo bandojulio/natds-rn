@@ -16,7 +16,7 @@ jest.mock('../../common/themeSelectors', () => (
     getColorOnPrimary: () => '#F4F4',
     getColorPrimary: () => '#FFFFFF',
     getFont: () => 'doc robot',
-    getRadiusPropsBySize: () => 42,
+    getRadiusBySize: () => 42,
     getShadowBySize: () => ({ shadowColor: '#AEAEAE' }),
   }));
 

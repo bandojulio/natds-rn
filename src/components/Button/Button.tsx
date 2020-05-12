@@ -7,7 +7,7 @@ import {
   getColorHighEmphasis,
   getButtonPropsBySize,
   getFont,
-  getRadiusPropsBySize,
+  getRadiusBySize,
   getShadowBySize,
   Theme,
 } from '../../common/themeSelectors';
@@ -65,7 +65,7 @@ const getButtonTextStyles = (theme: Theme, type: ButtonTypes) => (
 );
 
 const ButtonBase = styled.TouchableOpacity<ButonBase>(({ type, theme }) => ({
-  borderRadius: getRadiusPropsBySize(theme, 'medium'),
+  borderRadius: getRadiusBySize(theme, 'medium'),
   ...getButtonStyles(theme, type),
   ...getButtonPropsBySize(theme, 'medium'),
 }));
